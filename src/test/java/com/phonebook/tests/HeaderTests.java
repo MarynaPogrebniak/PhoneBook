@@ -1,6 +1,5 @@
 package com.phonebook.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -10,33 +9,33 @@ public class HeaderTests extends TestBase{
 
     @BeforeMethod
     public void ensurePrecondition(){
-        if (!isElementPresent(By.xpath("//a[.='LOGIN']"))) {
-            click(By.xpath("//button[.='Sign Out']"));
+        if (!app.isLoginLinkPresent()) {
+            app.clickOnSignOutButton();
         }
      }
 
     @Test
     public void LogoTest() {
-        Assert.assertTrue(isElementPresent(By.xpath("//h1[contains(text(),'PHONEBOOK')]")));
+        Assert.assertTrue(app.isLogoPresent());
     }
 
     @Test
     public void HomeButtonTest() {
-        Assert.assertTrue(isElementPresent(By.xpath("//a[.='HOME']")));
+        Assert.assertTrue(app.isHomeLinkPresent());
     }
 
     @Test
     public void AboutButtonTest() {
-        Assert.assertTrue(isElementPresent(By.xpath("//a[.='ABOUT']")));
+        Assert.assertTrue(app.isAboutLinkPresent());
     }
 
     @Test
     public void LoginButtonTest() {
-       Assert.assertTrue(isElementPresent(By.xpath("//a[contains(text(), 'LOGIN')]")));
+       Assert.assertTrue(app.isLoginLinkPresent());
     }
 
     @AfterMethod
     public void tearDown (){
-        driver.quit();
+
     }
 }

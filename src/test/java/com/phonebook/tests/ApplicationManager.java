@@ -137,4 +137,9 @@ public class ApplicationManager {
     public boolean isHomeComponentPresent1 () {
         return isElementPresent1(By.xpath("//h1[text()='Home Component']"));
     }
+
+    public void removeContact(){
+        click(By.cssSelector(".contact-item_card__2SOIM"));
+        click((By.xpath("//button[.='Remove']")));
+    }
 }

@@ -47,7 +47,5 @@ public class CreateContactTests extends TestBase {
     public void removeUser(){
         app.click(By.cssSelector(".contact-item_card__2SOIM"));
         app.click((By.xpath("//button[.='Remove']")));
-
-        // assert ne nado
     }
 }

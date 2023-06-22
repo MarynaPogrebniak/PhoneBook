@@ -39,7 +39,6 @@ public class RemoveContactTest extends TestBase {
     @Test
     public void removeContactPositiveTest() {
         app.getContact().removeContact();
-       // app.getHomePage().isElementPresent(By.xpath("//h1[text()=' No Contacts here!']"));
         Assert.assertTrue(app.getContact().isContactRemoved(" Contacts here!"));
     }
 }

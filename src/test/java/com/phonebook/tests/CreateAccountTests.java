@@ -9,12 +9,12 @@ public class CreateAccountTests extends TestBase{
     // precondition: user should be logged out
     @BeforeMethod
     public void ensurePrecondition(){
-        if (!app.isLoginLinkPresent()) {
-            app.clickOnSignOutButton();
+        if (!app.getHeader().isLoginLinkPresent()) {
+            app.getHeader().clickOnSignOutButton();
         }
         // click on Login Link
         // driver.findElement(By.xpath("//a[.='LOGIN']")).click();
-        app.clickOnLoginLink();
+        app.getHeader().clickOnLoginLink();
     }
 
     @Test
@@ -22,15 +22,14 @@ public class CreateAccountTests extends TestBase{
         // enter email field
         // [placeholder='Email']
         // enter password field
-        app.fillLoginRegistrationForm(new User()
+        app.getUser().fillLoginRegistrationForm(new User()
                 .setEmail("sam@gmail.com")
                 .setPassword("Sam123$-$_"));
 
         // click on Registration // by.name - registration
-        app.clickOnRegistrationButton();
+        app.getUser().clickOnRegistrationButton();
 
         // assert user logged in(check Sign Out button displayed)
-        Assert.assertTrue(app.isAlertPresent());
+        Assert.assertTrue(app.getUser().isAlertPresent());
     }
-
 }

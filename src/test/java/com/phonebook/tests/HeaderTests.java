@@ -9,33 +9,32 @@ public class HeaderTests extends TestBase{
 
     @BeforeMethod
     public void ensurePrecondition(){
-        if (!app.isLoginLinkPresent()) {
-            app.clickOnSignOutButton();
+        if (!app.getHeader().isLoginLinkPresent()) {
+            app.getHeader().clickOnSignOutButton();
         }
      }
 
     @Test
     public void LogoTest() {
-        Assert.assertTrue(app.isLogoPresent());
+        Assert.assertTrue(app.getHeader().isLogoPresent());
     }
 
     @Test
     public void HomeButtonTest() {
-        Assert.assertTrue(app.isHomeLinkPresent());
+        Assert.assertTrue(app.getHeader().isHomeLinkPresent());
     }
 
     @Test
     public void AboutButtonTest() {
-        Assert.assertTrue(app.isAboutLinkPresent());
+        Assert.assertTrue(app.getHeader().isAboutLinkPresent());
     }
 
     @Test
     public void LoginButtonTest() {
-       Assert.assertTrue(app.isLoginLinkPresent());
+       Assert.assertTrue(app.getHeader().isLoginLinkPresent());
     }
 
     @AfterMethod
     public void tearDown (){
-
     }
 }

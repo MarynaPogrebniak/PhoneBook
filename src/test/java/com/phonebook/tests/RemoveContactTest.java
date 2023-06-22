@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class RemoveContactTests extends TestBase {
+public class RemoveContactTest extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition(){

@@ -1,4 +1,4 @@
-package com.phonebook.tests;
+package com.phonebook.framework;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,7 +11,7 @@ import java.time.Duration;
 public class ApplicationManager {
 
     String browser;
-    WebDriver driver;
+    public WebDriver driver;
 
     UserHelper user;
     ContactHelper contact;
@@ -39,6 +39,7 @@ public class ApplicationManager {
     }
 
     public void init() {
+        System.err.close();
 
         if (browser.equalsIgnoreCase("chrome")){
             driver = new ChromeDriver();

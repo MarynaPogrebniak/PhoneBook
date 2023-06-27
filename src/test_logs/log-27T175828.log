@@ -1,0 +1,19 @@
+1290 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\AIT TR Student\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+5253 [main] INFO  com.phonebook.tests.TestBase -- Start test addContactFromCsvFilePositiveTest with data: [Contact{name='Sam', phone='1234567890'}]
+8907 [main] INFO  com.phonebook.tests.TestBase -- PASSED: addContactFromCsvFilePositiveTest
+8907 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+8907 [main] INFO  com.phonebook.tests.TestBase -- ==================================================
+8909 [main] INFO  com.phonebook.tests.TestBase -- Start test addContactFromCsvFilePositiveTest with data: [Contact{name='Sam', phone='12345678901'}]
+22923 [main] INFO  com.phonebook.tests.TestBase -- PASSED: addContactFromCsvFilePositiveTest
+22923 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+22924 [main] INFO  com.phonebook.tests.TestBase -- ==================================================
+22926 [main] INFO  com.phonebook.tests.TestBase -- Start test addContactFromCsvFilePositiveTest with data: [Contact{name='Sam', phone='12345678901234'}]
+36038 [main] INFO  com.phonebook.tests.TestBase -- PASSED: addContactFromCsvFilePositiveTest
+36040 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+36041 [main] INFO  com.phonebook.tests.TestBase -- ==================================================
+36043 [main] INFO  com.phonebook.tests.TestBase -- Start test addContactFromCsvFilePositiveTest with data: [Contact{name='Sam', phone='123456789012345'}]
+52714 [main] INFO  com.phonebook.tests.TestBase -- PASSED: addContactFromCsvFilePositiveTest
+52715 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+52715 [main] INFO  com.phonebook.tests.TestBase -- ==================================================

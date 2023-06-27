@@ -1,4 +1,4 @@
-package com.phonebook.tests;
+package com.phonebook.framework;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -55,6 +55,14 @@ public class BaseHelper {
             driver.switchTo().alert();
             alert.accept();
             return true;
+        }
+    }
+
+    public void pause(int millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
     }
 }

@@ -1,0 +1,7 @@
+1668 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\AIT TR Student\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+7278 [main] INFO  com.phonebook.tests.TestBase -- Start test loginPositiveTest with data: []
+9024 [main] INFO  com.phonebook.tests.TestBase -- PASSED: loginPositiveTest
+9024 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+9024 [main] INFO  com.phonebook.tests.TestBase -- ==================================================

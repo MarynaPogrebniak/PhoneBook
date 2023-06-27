@@ -1,4 +1,4 @@
-package com.phonebook.tests;
+package com.phonebook.framework;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -1,5 +1,8 @@
 package com.phonebook.tests;
 
+import com.phonebook.framework.DataProviders;
+import com.phonebook.model.Contact;
+import com.phonebook.model.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -47,6 +50,23 @@ public class CreateContactTests extends TestBase {
         Assert.assertTrue(app.getContact().isContactCreated("Karin"));
     }
 
+    @Test (dataProviderClass = DataProviders.class, dataProvider = "addContactFromCsvFile")
+    public void addContactFromCsvFilePositiveTest(Contact contact) {
+        app.getHeader().clickOnAddLink();
+        app.getContact().fillAddContactForm(contact);
+
+        app.getContact().clickOnSaveButton();
+    }
+
+    @Test (dataProviderClass = DataProviders.class, dataProvider = "addNegativeContactFromCsvFile")
+    public void addContactFromCsvFileNegativeTest(Contact contact) {
+        app.getHeader().clickOnAddLink();
+        app.getContact().fillAddContactForm(contact);
+
+        app.getContact().clickOnSaveButton();
+        Assert.assertTrue(app.getUser().isAlertPresent());
+
+    }
     @AfterMethod
     public void postCondition () {
         app.getContact().removeContact();

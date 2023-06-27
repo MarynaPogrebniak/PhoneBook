@@ -1,5 +1,6 @@
 package com.phonebook.tests;
 
+import com.phonebook.model.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -30,7 +31,7 @@ public class LoginTests extends TestBase {
         Assert.assertTrue(app.getHeader().isSignOutButtonPresent());
     }
 
-    @Test (priority = 2) // апустится 2м в рамках одного класса
+    @Test (priority = 2) // запустится 2м в рамках одного класса
     public void loginNegativeWithoutPasswordTest() {
         // enter email field
         app.getUser().fillLoginRegistrationForm(new User().setEmail("sam@gmail.com"));

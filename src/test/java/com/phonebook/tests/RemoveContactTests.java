@@ -1,10 +1,12 @@
 package com.phonebook.tests;
 
+import com.phonebook.model.Contact;
+import com.phonebook.model.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class RemoveContactTest extends TestBase {
+public class RemoveContactTests extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition(){
@@ -31,13 +33,20 @@ public class RemoveContactTest extends TestBase {
                 .setDesc("friend"));
 
         app.getContact().clickOnSaveButton();
-        Assert.assertTrue(app.getContact().isContactCreated("Karin"));
-        app.getContact().removeContact();
-    }
+     }
 
     @Test
-    public void removeContactPositiveTest() {
+    public void removeContactTest() {
+
+        int sizeBefore = app.getContact().sizeOfContacts();
+
         app.getContact().removeContact();
-        Assert.assertTrue(app.getContact().isContactRemoved(" Contacts here!"));
+
+        app.getContact().pause(1000);
+
+        int sizeAfter = app.getContact().sizeOfContacts();
+
+        Assert.assertEquals(sizeAfter, sizeBefore - 1);
+//        Assert.assertTrue(app.getContact().isContactRemoved(" Contacts here!"));
     }
 }

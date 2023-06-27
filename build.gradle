@@ -31,12 +31,15 @@ task qa1 (type:Test) {
     useTestNG() {
         def suite1 = project.hasProperty("suite1")
         def suite2 = project.hasProperty("suite2")
+        def suite3 = project.hasProperty("suite3")
         if (suite1) {
             suites 'src/test/resources/quick.xml'
-        } else if ("suite2") {
+        } else if (suite2) {
             suites 'src/test/resources/regression.xml'
+        } else if (suite3) {
+            suites 'src/test/resources/negative.xml'
         }
-        suites 'src/test/resources/quick.xml'
+      //  suites 'src/test/resources/quick.xml'
     }
 
     if (project.hasProperty('browser')) {

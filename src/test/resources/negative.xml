@@ -4,8 +4,18 @@
 
     <test name="Regression" >
         <classes>
-            <class name="com.phonebook.tests.CreateContactTests" />
-
+            <class name="com.phonebook.tests.CreateContactTests" >
+            <methods>
+                <include name="addContactFromCsvFileNegativeTest"></include> </methods>
+            </class>
+            <class name="com.phonebook.tests.LoginTests" >
+                <methods>
+                    <include name="loginNegativeWithoutPasswordTest"></include> </methods>
+            </class>
+            <class name="com.phonebook.tests.CreateAccountTests" >
+                <methods>
+                    <include name="existedUserRegistrationNegativeTest"></include> </methods>
+            </class>
         </classes>
     </test>
 

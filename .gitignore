@@ -1,8 +1,11 @@
 .gradle
-build/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+
+/build/classes/
+/build/generated/
+/build/reports/
+/build/resources/
+/build/tmp/
 
 ### IntelliJ IDEA ###
 .idea
@@ -45,3 +48,5 @@ bin/
 settings.gradle
 gradlew
 *.bat
+*.log
+*.png

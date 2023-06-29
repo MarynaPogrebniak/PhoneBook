@@ -39,7 +39,6 @@ task qa1 (type:Test) {
         } else if (suite3) {
             suites 'src/test/resources/negative.xml'
         }
-      //  suites 'src/test/resources/quick.xml'
     }
 
     if (project.hasProperty('browser')) {

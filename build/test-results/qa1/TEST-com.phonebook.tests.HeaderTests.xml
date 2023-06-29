@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.phonebook.tests.HeaderTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-06-29T08:27:54" hostname="DESKTOP-OS617JJ" time="0.193">
+  <properties/>
+  <testcase name="AboutButtonTest" classname="com.phonebook.tests.HeaderTests" time="0.025"/>
+  <testcase name="HomeButtonTest" classname="com.phonebook.tests.HeaderTests" time="0.029"/>
+  <testcase name="LoginButtonTest" classname="com.phonebook.tests.HeaderTests" time="0.02"/>
+  <testcase name="LogoTest" classname="com.phonebook.tests.HeaderTests" time="0.027"/>
+  <system-out><![CDATA[10:27:54.025 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test AboutButtonTest with data: []
+10:27:54.075 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: AboutButtonTest
+10:27:54.076 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:27:54.077 [Test worker] INFO  com.phonebook.tests.TestBase -- ==================================================
+10:27:54.080 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test HomeButtonTest with data: []
+10:27:54.131 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: HomeButtonTest
+10:27:54.131 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:27:54.132 [Test worker] INFO  com.phonebook.tests.TestBase -- ==================================================
+10:27:54.136 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test LoginButtonTest with data: []
+10:27:54.180 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: LoginButtonTest
+10:27:54.181 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:27:54.181 [Test worker] INFO  com.phonebook.tests.TestBase -- ==================================================
+10:27:54.190 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test LogoTest with data: []
+10:27:54.243 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: LogoTest
+10:27:54.243 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:27:54.244 [Test worker] INFO  com.phonebook.tests.TestBase -- ==================================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
